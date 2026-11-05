@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>îmi pare rău Danu</title>
+<style>
+:root{--bg:#fff5f6;--card:#ffffff;--text:#3b2a2e;--accent:#d6336c;--soft:#f8d7de;--line:#f0c4cd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1417;--card:#2a1d21;--text:#f6e6ea;--accent:#ff6b9a;--soft:#3d2830;--line:#4d3039}}
+:root[data-theme="dark"]{--bg:#1d1417;--card:#2a1d21;--text:#f6e6ea;--accent:#ff6b9a;--soft:#3d2830;--line:#4d3039}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.75;font-size:18px}
+main{max-width:640px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:clamp(2rem,8vw,3rem);text-align:center;color:var(--accent);margin:20px 0 36px;font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 22px;box-shadow:0 6px 24px rgba(214,51,108,.08)}
+.card p{margin:0 0 1.1em;opacity:0;transform:translateY(14px);animation:in .9s ease forwards}
+.card p:nth-child(1){animation-delay:.2s}.card p:nth-child(2){animation-delay:.9s}.card p:nth-child(3){animation-delay:1.6s}.card p:nth-child(4){animation-delay:2.3s;margin-bottom:0}
+@keyframes in{to{opacity:1;transform:none}}
+.heart-wrap{text-align:center;margin:56px 0 40px}
+.heart{position:relative;width:200px;height:180px;margin:0 auto;animation:beat 1.4s ease-in-out infinite}
+.heart svg{width:100%;height:100%;filter:drop-shadow(0 8px 14px rgba(214,51,108,.35))}
+.heart span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font-size:15px;line-height:1.25;padding:0 40px 18px;font-weight:600}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.12)}30%{transform:scale(1)}45%{transform:scale(1.08)}}
+.float{position:fixed;bottom:-30px;pointer-events:none;animation:up linear forwards;color:var(--accent)}
+@keyframes up{to{transform:translateY(-110vh);opacity:0}}
+label{display:block;font-weight:600;margin-bottom:12px;color:var(--accent)}
+textarea{width:100%;min-height:120px;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit;resize:vertical}
+button{margin-top:14px;background:var(--accent);color:#fff;border:0;border-radius:999px;padding:12px 28px;font:inherit;cursor:pointer}
+button:disabled{opacity:.6}
+#msg{margin-top:14px;min-height:1.5em}
+@media (prefers-reduced-motion:reduce){.heart,.card p,.float{animation:none;opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<main>
+<h1>îmi pare rău Danu</h1>
+
+<section class="card">
+<p>Scumpul meu Danu, îmi pare foarte rău că am greșit aseară. Aseară, ieșind la 23:30 de la bar, m-am grăbit să ajung acasă pentru că îmi era foarte somn și frig, iar compania nu mă mai interesa, mă gândeam doar cât de fain ar fi fost să fim împreună în loc să fiu cu străinii. Cu gândul ăsta am fost tot drumul și răspundeam la toate mesajele tale de pe instagram, fiind sigură că, după ce răspund la toate relurile, o să-ți spun că  am ajuns acasă, odata ajunsă.</p>
+<p>Apoi cand am iesit din tren, a trebuit să dau un apel domnisoarei Karene, care are niște probleme (nu contează care), si avea nevoie să o ascult. Neștiind că tot apelul va dura foarte mult (52 min si 18 se) eram sigura ca acus acus inchid si iti scriu ca am ajuns. Fiind extrem de obosita, mam pus in pat si ascultam, apoi țin minte că am adormit cu ea pe apel, iar Karene mi-a pus o intrebare si ea a  închis pentru că a văzut că nu mai răspund.</p>
+<p>Eu m-am gândit tot drumul la tine, doar că oboseala m-a luat înainte și nu aveam telefonul în mână ca să-ți pot scrie, si imi pare foarte rau, vad greaseala mea</p>
+<p>Îmi pare rău că te-am făcut să aștepți și că te-am rănit prin lipsa mesajului meu, nu am vrut să te îngrijorez. Eu mă gândeam mereu la tine, doar că nu mereu am puterea să ți-o spun, fiind atât de obosită, pur și simplu mi-a ieșit din cap. Știu că oboseala mea nu este un argument bun, dar doresc să te informez care a fost situația și că îmi pare nespus de rău că nu ți-am scris nimic și ți-am provocat durere, așteptare și neglijență față de emoțiile tale.</p>
+</section>
+
+<div class="heart-wrap">
+<div class="heart">
+<svg viewBox="0 0 100 90" aria-hidden="true"><path d="M50 86C20 62 4 46 4 28 4 14 15 4 28 4c9 0 17 5 22 13C55 9 63 4 72 4c13 0 24 10 24 24 0 18-16 34-46 58z" fill="#e6366f"/></svg>
+<span>îmi pare rău scumpul meu Danu</span>
+</div>
+</div>
+
+<section class="card">
+<label for="ans">Cum dorești ca Catea să se răscumpere pentru eroarea ei?</label>
+<textarea id="ans" placeholder="Scrie aici..."></textarea>
+<button id="send" type="button">Trimite</button>
+<div id="msg" aria-live="polite"></div>
+</section>
+</main>
+
+<script>
+(function(){
+  var hearts=["♥","❤","♡"];
+  function spawn(){
+    var e=document.createElement("div");
+    e.className="float";
+    e.textContent=hearts[Math.floor(Math.random()*hearts.length)];
+    e.style.left=Math.random()*100+"vw";
+    e.style.fontSize=(14+Math.random()*20)+"px";
+    e.style.animationDuration=(6+Math.random()*5)+"s";
+    document.body.appendChild(e);
+    setTimeout(function(){e.remove()},11500);
+  }
+  if(!window.matchMedia("(prefers-reduced-motion:reduce)").matches){setInterval(spawn,1100)}
+
+  var btn=document.getElementById("send"),box=document.getElementById("ans"),msg=document.getElementById("msg");
+  btn.addEventListener("click",async function(){
+    var text=box.value.trim();
+    if(!text){msg.textContent="Scrie întâi un răspuns, te rog.";return}
+    btn.disabled=true;
+    try{
+      var r=await fetch("https://api.web3forms.com/submit",{
+        method:"POST",
+        headers:{"Content-Type":"application/json","Accept":"application/json"},
+        body:JSON.stringify({
+          access_key:"24a8607c-0989-44b6-baa1-a01f69c1f460",
+          subject:"Răspunsul lui Danu: cum să te răscumperi",
+          from_name:"Danu",
+          message:text
+        })
+      });
+      var d=await r.json();
+      if(!d.success)throw new Error("fail");
+      msg.textContent="Mulțumesc, Danu. Catea a primit răspunsul tău ♥";
+      box.disabled=true;
+    }catch(err){
+      msg.textContent="Nu s-a putut trimite. Încearcă din nou, te rog.";
+      btn.disabled=false;
+    }
+  });
+})();
+</script>
+</body>
+</html>
